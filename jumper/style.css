@@ -1,0 +1,62 @@
+div
+{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 60px;
+    display: inline-block;
+}
+div:nth-child(2)
+{
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+div:nth-child(3)
+{
+    width: 100px;
+    height: 100px;
+    background-color:orange;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+div:nth-child(4)
+{
+    width: 200px;
+    height: 200px;
+    background-color:yellowgreen;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+div:hover
+{
+    animation: jumper .7s alternate;
+}
+
+@keyframes jumper
+{
+    from{
+       transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-20px);
+    }
+    66%
+    {
+        transform: translateY(0px);
+    }
+    80%
+    {
+        transform: translateY(-7px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
